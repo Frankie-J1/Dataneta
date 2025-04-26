@@ -11,19 +11,29 @@ Este repositorio contiene el script completo para la creación y carga inicial d
 - Definición de restricciones (`CHECK`, `UNIQUE`).
 - Inserciones de datos iniciales de prueba.
 
-## ⚙️ ¿Cómo restaurar la base de datos?
+🚀 ¿Cómo restaurar la base de datos en SSMS?
+Crear una base de datos nueva en SSMS (por ejemplo, podés llamarla DatanetaDB).
 
-1. Crear una base de datos nueva en SSMS (por ejemplo, `DatanetaDB`).
-2. Abrir el archivo `DatanetaDB_full.sql` desde SSMS.
-3. Ejecutar el script completo (botón **Execute** o **F5**).
+Importar el archivo .sql:
 
-> Nota: Si ya existe la base de datos, asegurarse de eliminarla o crear una nueva para evitar conflictos.
+Ir a SSMS ➔ Abrir archivo.
 
-## ✨ Tips adicionales
+Seleccionar el script generado (por ejemplo DatanetaDB_Estructura.sql).
 
-- Si modificás el esquema o los datos, regenerá el script usando **Tasks > Generate Scripts** en SSMS.
-- Recordá que la estructura del modelo físico sigue el diseño realizado en UT2.
+Ejecutar todo el script completo:
 
+Botón Execute o apretar F5.
+
+Esto creará todas las tablas, relaciones, claves primarias y foráneas.
+
+🔔 Nota importante: Si ya existe una base de datos con ese nombre, se recomienda eliminarla o crear otra con nombre distinto para evitar conflictos.
+
+✏️ Tips adicionales
+Si modificás algo en el modelo (agregás tablas, cambiás columnas, relaciones, etc.), volvé a generar el script desde SSMS:
+
+Ir a Tasks > Generate Scripts.
+
+Confirmá que el esquema final respete el modelo de la UT2.
 ---
 
 ### 🧹 Última actualización
